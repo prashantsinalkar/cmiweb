@@ -1,0 +1,239 @@
+
+{% if page.global_header_first or page.global_header_second or page.global_header_third or page.global_header_fourth or page.global_header_fifth %}
+	<!-- #global-header -->
+	<div id="global-header" class="clearfix">
+		<div class="container">
+			<!-- #global-header-inside -->
+			<div id="global-header-inside" class="clearfix">
+				<div id="global-header-firstpart">
+					{% if page.global_header_first %}
+						<div class="global-header-area">
+							{{ page.global_header_first }}
+						</div>
+					{% endif %}
+					{% if page.global_header_second %}
+						<div class="global-header-area">
+							{{ page.global_header_second }}
+						</div>
+					{% endif %}
+				</div>
+				<div id="global-header-secondpart">
+					{% if page.global_header_third %}
+						<div class="global-header-area">
+						{{ page.global_header_third }}
+						</div>
+					{% endif %}
+					{% if page.global_header_fourth %}
+						<div class="global-header-area">
+						{{ page.global_header_fourth }}
+						</div>
+					{% endif %}
+					{% if page.global_header_fifth %}
+						<div class="global-header-area">
+						{{ page.global_header_fifth }}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+			<!-- EOF: #global-header-inside -->
+		</div>
+	</div>
+	<!-- EOF: #global-header -->    
+{% endif %}
+
+{% if page.header_branding or page.header_menu or page.header_search %}
+<!-- #header -->
+<div id="header" class="clearfix">
+    <div class="container">
+        <!-- #header-inside -->
+        <div id="header-inside" class="clearfix">
+			{% if page.header_branding %}
+				<!-- #header-site-branding -->
+				<div id="header-site-branding" class="clearfix">
+					{{ page.header_branding }}
+				</div>
+				<!-- EOF:#header-site-branding -->
+			{% endif %}
+			{% if page.header_menu %}
+				<!-- #header-main-menu -->
+				<div class="hamburger_menu">
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" style="outline: none;">
+						<i class="icon icon-bars"></i>
+						<div class="ham-name">MENU</div>
+					</button>
+				</div>
+				<div id="header-main-menu" class="clearfix">
+					<div class="navbar-collapse nav-main-collapse collapse">
+						{{ page.header_menu }}
+					</div>
+				</div>
+				<!-- EOF:#header-main-menu -->
+			{% endif %}
+			{% if page.header_search %}
+				<!-- #header-search -->
+				<a id="header-search" class="search">
+					<i class="icon-search search-btn"></i>
+				</a>   
+				<div class="search-open"  >
+					{{ page.header_search }}
+				</div>
+				<!-- EOF:#header-site-search -->
+			{% endif %}
+        </div>
+        <!-- EOF: #header-inside -->
+
+    </div>
+</div>
+<!-- EOF: #header -->    
+{% endif %}
+
+{% if page.before_content %}
+	<!-- #before-content -->
+	<div id="before-content" class="clearfix">
+
+		   <!-- #before-content-inside -->
+		   <div id="before-content-inside" class="clearfix">
+			{{ page.before_content }}
+		   </div>
+		   <!-- EOF: #before-content-inside --> 
+	</div>
+{% endif %}
+
+{% if page.breadcrumbpath %}	
+	<div id="breadcrumbpath" class="clearfix">
+			<div class="container">
+				<!--#before-content-breadcrumbpath-->
+					<section id="before-content-breadcrumbpath" class="before_content_breadcrumbpath clearfix">
+						{{ page.breadcrumbpath }}
+					</section>
+				<!--EOF:#before-content-breadcrumbpath-->
+			</div>
+	</div>
+{% endif %}
+<!-- EOF:#before-content -->
+
+<!-- #page -->
+<div id="page" class="clearfix">
+    <!-- #main-content -->
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                {% if page.sidebar_first %}
+                <aside class="col-md-3">  
+                    <!--#sidebar-first-->
+                    <section id="sidebar-first" class="sidebar clearfix">
+						{{ page.sidebar_first }}
+                    </section>
+                    <!--EOF:#sidebar-first-->
+                </aside>
+                {% endif %}
+                <section class="col-md-9">
+                    <!-- #main -->
+                    <div id="main" class="clearfix">
+                        <div id="content-wrapper">
+                            {% if page.content %}
+                                {{ page.content }}
+                            {% endif %}
+                        </div>
+                        <!-- EOF:#content-wrapper -->
+                    </div>
+                    <!-- EOF:#main -->
+                </section>        
+            </div>
+
+        </div>
+    </div>
+    <!-- EOF:#main-content -->
+    {% if page.after_content %}
+		<!-- #after-content -->
+		<div id="after-content" class="clearfix">
+			<div class="container">
+				<!-- #after-content-inside -->
+				<div id="after-content-inside" class="clearfix">
+					{{ page.after_content }}
+				</div>
+				<!-- EOF:#after-content-inside -->
+			</div>
+		</div>
+		<!-- EOF: #after-content -->
+    {% endif %}
+</div>
+<!-- EOF:#page -->
+
+{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+<!-- #footer -->
+<footer id="footer" class="clearfix">
+    <div class="container">
+    
+        <!-- #footer-inside -->
+        <div id="footer-inside" class="clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    {% if page.footer_first %}
+                    <div id="footer-sitemap" class="footer-area">
+                    {{ page.footer_first }}
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <div class="col-md-12">
+                    {% if page.footer_second %}
+                    <div class="footer-area">
+                    {{ page.footer_second }}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="col-md-6">
+                    {% if page.footer_third %}
+                    <div class="footer-area">
+                    {{ page.footer_third }}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="col-md-6 floatright">
+                    {% if page.footer_fourth %}
+                    <div class="footer-area">
+                    {{ page.footer_fourth }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- EOF: #footer-inside -->
+    
+    </div>
+</footer> 
+<!-- EOF #footer -->
+{% endif %}
+
+<footer id="globalfooter" class="clearfix">
+    <div class="container">
+        <!-- #global-footer-inside -->
+        <div id="globalfooter-inside" class="clearfix">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- #global-footer-left -->
+                    <div class="global-footer-left">
+						{% if page.global_footer_left %}
+							{{ page.global_footer_left }}
+						{% endif %}
+                    </div>
+                    <!-- EOF: #global-footer-left -->
+                </div>
+				<div class="col-md-6 floatright">
+                    <!-- #global-footer-right -->
+                    <div class="global-footer-right">
+						{% if page.global_footer_right %}
+							{{ page.global_footer_right }}
+						{% endif %}
+                    </div>
+                    <!-- EOF: #global-footer-right -->
+                </div>
+            </div>
+        </div>
+        <!-- EOF: #global-footer-inside -->
+    </div>
+</footer>
+<!-- EOF:#global-footer -->

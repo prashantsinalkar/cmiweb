@@ -1,0 +1,373 @@
+/*Layouts Responsiveness css Code Start Here*/
+.group-header, .group-footer, .middle {
+  clear: both;
+}
+.group-header > .field__item {
+    padding-bottom: 10px;
+}
+[dir="rtl"] .group-left{
+  float: right;
+}
+[dir="rtl"] .group-right{
+  float: left;
+}
+.group-one-column > .group-left,
+.group-one-column > .group-right,
+.group-one-column > .group-above-left,
+.group-one-column > .group-above-right,
+.group-one-column > .group-below-left,
+.group-one-column > .group-below-right,
+.group-one-column > .group-below-first,
+.group-one-column > .group-below-second,
+.group-one-column > .group-below-third,
+.group-one-column > .group-below-fourth{
+  width: 100% !important;
+  clear: both;
+}
+.group-footer {
+  padding-bottom:5px !important;
+}
+.group-footer > .field__item {
+    padding-top: 5px;
+}
+
+@media(max-width:660px){
+	.group-left, .group-middle, .group-right,
+	.group-above-left, .group-above-right, .group-below-right, .group-below-left,
+	.layout--twocol-bricks>.layout-region--left_above,
+	.layout--twocol-bricks>.layout-region--right_above,
+	.layout--twocol-bricks>.layout-region--left_below,
+	.layout--twocol-bricks>.layout-region--right_below,
+    .group-below-first, .group-below-second, .group-below-third, .group-below-fourth{
+		width: 100% !important;
+	}
+	.layout--threecol-33 > .layout-region {
+		flex: none;
+		width: 100%;
+	}
+}
+
+/*Layouts Responsiveness css Code Ends Here*/
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-15-85 template. ***/
+.cmi-layouts-2col-stacked-noresponsive-10-90 > .noresponsive-group-left {
+  float: left; /* LTR */
+  width: 9%;
+}
+.cmi-layouts-2col-stacked-noresponsive-10-90 > .noresponsive-group-right {
+  float: right; /* LTR */
+  width: 90%;
+}
+
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-15-85 template. ***/
+.cmi-layouts-2col-stacked-fluid-15-85 > .group-left {
+  float: left; /* LTR */
+  width: 14%;
+}
+.cmi-layouts-2col-stacked-fluid-15-85 > .group-right {
+  float: right; /* LTR */
+  width: 84%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-20-80 template. ***/
+.cmi-layouts-2col-stacked-fluid-20-80 > .group-left {
+  float: left; /* LTR */
+  width: 19%;
+}
+.cmi-layouts-2col-stacked-fluid-20-80 > .group-right {
+  float: right; /* LTR */
+  width: 79%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-25-75 template. ***/
+.cmi-layouts-2col-stacked-fluid-25-75 > .group-left {
+  float: left; /* LTR */
+  width: 24%;
+}
+.cmi-layouts-2col-stacked-fluid-25-75 > .group-right {
+  float: right; /* LTR */
+  width: 75%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-30-70 template. ***/
+.cmi-layouts-2col-stacked-fluid-30-70 > .group-left {
+  float: left; /* LTR */
+  width: 29%;
+}
+.cmi-layouts-2col-stacked-fluid-30-70 > .group-right {
+  float: right; /* LTR */
+  width: 69%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-33-66 template. ***/
+.cmi-layouts-2col-stacked-fluid-33-66 > .group-left {
+  float: left; /* LTR */
+  width: 32%;
+}
+.cmi-layouts-2col-stacked-fluid-33-66 > .group-right {
+  float: right; /* LTR */
+  width: 65%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-40-60 template. ***/
+.cmi-layouts-2col-stacked-fluid-40-60 > .group-left {
+  float: left; /* LTR */
+  width: 39%;
+}
+.cmi-layouts-2col-stacked-fluid-40-60 > .group-right {
+  float: right; /* LTR */
+  width: 59%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-50-50 template. ***/
+.cmi-layouts-2col-stacked-fluid-50-50 > .group-left {
+  float: left; /* LTR */
+  width: 49%;
+}
+.cmi-layouts-2col-stacked-fluid-50-50 > .group-right {
+  float: right;
+  width: 49%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-50-50-no-float-right template. ***/
+.cmi-layouts-2col-stacked-fluid-50-50-no-float-right > .group-left {
+  float: left; /* LTR */
+  width: 49%;
+}
+.cmi-layouts-2col-stacked-fluid-50-50-no-float-right > .group-right {
+  float: right;
+  width: 49%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-60-40 template. ***/
+.cmi-layouts-2col-stacked-fluid-60-40 > .group-left {
+  float: left; /* LTR */
+  width: 59%;
+}
+.cmi-layouts-2col-stacked-fluid-60-40 > .group-right {
+  float: right; /* LTR */
+  width: 39%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-66-33 template. ***/
+.cmi-layouts-2col-stacked-fluid-66-33 > .group-left {
+  float: left; /* LTR */
+  width: 65%;
+}
+.cmi-layouts-2col-stacked-fluid-66-33 > .group-right {
+  float: right; /* LTR */
+  width: 32%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-70-30 template. ***/
+.cmi-layouts-2col-stacked-fluid-70-30 > .group-left {
+  float: left; /* LTR */
+  width: 69%;
+}
+.cmi-layouts-2col-stacked-fluid-70-30 > .group-right {
+  float: right; /* LTR */
+  width: 29%;
+}
+
+/*** Styling for the cmi-layouts-2col-bricks-stacked-fluid-70-30-50-50 template. ***/
+.cmi-layouts-2col-stacked-fluid-70-30-50-50 > .group-above-left {
+  float: left; /* LTR */
+  width: 69%;
+}
+.cmi-layouts-2col-stacked-fluid-70-30-50-50 > .group-above-right {
+  float: right; /* LTR */
+  width: 29%;
+}
+.cmi-layouts-2col-stacked-fluid-70-30-50-50 > .group-below-left {
+  float: left; /* LTR */
+  width: 49%;
+}
+.cmi-layouts-2col-stacked-fluid-70-30-50-50 > .group-below-right {
+  float: right; /* LTR */
+  width: 49%;
+}
+
+/*** Styling for the cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 template. ***/
+.cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 > .group-above-left {
+    float: left; /* LTR */
+    width: 29%;
+}
+.cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 > .group-above-right {
+    float: right; /* LTR */
+    width: 69%;
+}
+.cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 > .group-below-first {
+    float: left; /* LTR */
+    width: 24%;
+    clear: both;
+}
+.cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 > .group-below-second {
+    float: left; /* LTR */
+    width: 24%;
+}
+.cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 > .group-below-third {
+    float: left; /* LTR */
+    width: 24%;
+}
+.cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25 > .group-below-fourth {
+     float: left; /* LTR */
+    width: 24%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-80-20 template. ***/
+.cmi-layouts-2col-stacked-fluid-80-20 > .group-left {
+  float: left; /* LTR */
+  width: 79%;
+}
+.cmi-layouts-2col-stacked-fluid-80-20 > .group-right {
+  float: right; /* LTR */
+  width: 19%;
+}
+
+/*** Styling for the cmi-layouts-2col-stacked-fluid-85-15 template. ***/
+.cmi-layouts-2col-stacked-fluid-85-15 > .group-left {
+  float: left; /* LTR */
+  width: 84%;
+}
+.cmi-layouts-2col-stacked-fluid-85-15 > .group-right {
+  float: right; /* LTR */
+  width: 14%;
+}
+
+/*** Styling for the cmi-layouts-3col-stacked-fluid-25-25-50 template. ***/
+.cmi-layouts-3col-stacked-fluid-25-25-50 > .group-left {
+  width: 24%;
+  float: left; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-25-25-50.group-two-sidebars > .group-middle {
+  width: 24%;
+  float: left;
+}
+.cmi-layouts-3col-stacked-fluid-25-25-50 > .group-right {
+  width: 49%;
+  float: right; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-25-25-50.group-one-sidebar > .group-right {
+  width: 75%;
+  float: left;
+}
+.cmi-layouts-3col-stacked-fluid-25-25-50.group-one-sidebar > .group-right {
+  width: 100%;
+  float: left; /* LTR */
+}
+
+/*** Styling for the cmi-layouts-3col-stacked-fluid-50-25-25 template. ***/
+.cmi-layouts-3col-stacked-fluid-50-25-25 > .group-left {
+  width: 49%;
+  float: left; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-50-25-25.group-two-sidebars > .group-middle {
+  width: 24%;
+  float: left;
+}
+.cmi-layouts-3col-stacked-fluid-50-25-25 > .group-right {
+  width: 24%;
+  float: right; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-50-25-25.group-one-sidebar > .group-left {
+  width: 74%;
+}
+.cmi-layouts-3col-stacked-fluid-50-25-25.group-one-sidebar > .group-left {
+  width: 100%;
+  float: left; /* LTR */
+}
+
+/*** Styling for the cmi-layouts-3col-stacked-fluid-25-50-25 template. ***/
+.cmi-layouts-3col-stacked-fluid-25-50-25 > .group-left {
+  width: 24%;
+  float: left; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-25-50-25.group-two-sidebars > .group-middle {
+  width: 49%;
+  float: left;
+}
+.cmi-layouts-3col-stacked-fluid-25-50-25 > .group-right {
+  width: 24%;
+  float: right; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-25-50-25.group-one-sidebar > .group-left,
+.cmi-layouts-3col-stacked-fluid-25-50-25.group-one-sidebar > .group-right {
+  width: 49%;
+  float: left;
+}
+.cmi-layouts-3col-stacked-fluid-25-50-25.group-one-sidebar > .group-left {
+  width: 100%;
+  float: left; /* LTR */
+}
+
+/*** Styling for the cmi-layouts-3col-stacked-fluid-33-34-33 template. ***/
+.cmi-layouts-3col-stacked-fluid-33-34-33 > .group-left {
+  width: 32%;
+  float: left; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-33-34-33 > .group-middle {
+  width: 33%;
+  float:left;
+}
+.cmi-layouts-3col-stacked-fluid-33-34-33 > .group-right {
+  width: 32%;
+  float: right; /* LTR */
+}
+/*** Styling for the cmi-layouts-3col-stacked-fluid-20-40-40 template. ***/
+.cmi-layouts-3col-stacked-fluid-20-40-40 > .group-left {
+    width: 19%;
+    float: left; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-two-sidebars > .group-middle,
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-two-sidebars > .group-right {
+    width: 39%;
+    float: right; /* LTR */
+}
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-one-sidebar > .group-left {
+    width: 29%;
+    float: left;
+}
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-one-sidebar > .group-middle,
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-one-sidebar > .group-right {
+    width: 69%;
+    float: left;
+}
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-no-sidebar > .group-right,
+.cmi-layouts-3col-stacked-fluid-20-40-40.group-no-sidebar > .group-middle{
+    width: 100%;
+    float: left; /* LTR */
+}
+/*.cmi-layouts-3col-stacked-fluid-33-34-33 > .group-left {
+  width: 66%;
+}
+.cmi-layouts-3col-stacked-fluid-33-34-33 > .group-left {
+  width: 100%;
+  float: left; 
+}*/
+
+/**
+ * Styling for the twocol-bricks-50-50 template.
+ */
+.layout--twocol-bricks>.layout-region--left_above,
+.layout--twocol-bricks>.layout-region--right_above,
+.layout--twocol-bricks>.layout-region--left_below,
+.layout--twocol-bricks>.layout-region--right_below{
+	width: 49% !important;
+}
+.layout--twocol-bricks>.layout-region--left_above,
+.layout--twocol-bricks>.layout-region--left_below{
+	float: left !important;
+}
+.layout--twocol-bricks>.layout-region--right_above,
+.layout--twocol-bricks>.layout-region--right_below{
+	float: right !important;
+}
+.layout--twocol-bricks > .layout-region {
+    flex: none !important;
+}
+
+/* CMI - Custom Spacing */
+.cmi-margin-top-20 {
+    margin-top: 20px;
+}

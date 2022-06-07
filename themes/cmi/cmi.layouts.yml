@@ -1,0 +1,356 @@
+cmi_layouts_2col_stacked_noresponsive_10_90:
+  label: Fluid two column stacked No-Responsive - 10/90 Layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_noresponsive_10_90/cmi-layouts-2col-stacked-noresponsive-10-90
+  icon: ds_layouts/cmi_layouts_2col_stacked_noresponsive_10_90/cmi_layouts_2col_stacked_noresponsive_10_90.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_15_85:
+  label: Fluid two column stacked - 15/85 Layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_15_85/cmi-layouts-2col-stacked-fluid-15-85
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_15_85/cmi_layouts_2col_stacked_fluid_15_85.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_20_80:
+  label: Fluid two column stacked - 20/80 Layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_20_80/cmi-layouts-2col-stacked-fluid-20-80
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_20_80/cmi_layouts_2col_stacked_fluid_20_80.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_80_20:
+  label: Fluid two column stacked - 80/20 Layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi-layouts-2col-stacked-fluid-80-20
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_80_20.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_25_75:
+  label: Fluid two column stacked - 25/75 Layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi-layouts-2col-stacked-fluid-25-75
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_25_75.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_30_70:
+  label: Fluid two column stacked - 30/70 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_30_70/cmi-layouts-2col-stacked-fluid-30-70
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_30_70/cmi_layouts_2col_stacked_fluid_30_70.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_30_70_25_25_25_25:
+  label: Fluid two column stacked - 30/70-25/25/25/25 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_bricks_stacked_fluid_30_70_25_25_25_25/cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25
+  icon: ds_layouts/cmi_layouts_2col_bricks_stacked_fluid_30_70_25_25_25_25/cmi_layouts_2col_bricks_stacked_fluid_30_70_25_25_25_25.png
+  regions:
+    header:
+      label: Header
+    above_left:
+      label: Left
+    above_right:
+      label: Right
+    middle_wrappers:
+      label: Middles
+    below_first:
+      label: First
+    below_second:
+      label: Second
+    below_third:
+      label: Third
+    below_fourth:
+      label: Fourth
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_70_30:
+  label: Fluid two column stacked - 70/30 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_70_30/cmi-layouts-2col-stacked-fluid-70-30
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_70_30/cmi_layouts_2col_stacked_fluid_70_30.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_33_66:
+  label: Fluid two column stacked - 33/66 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_33_66/cmi-layouts-2col-stacked-fluid-33-66
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_33_66/cmi_layouts_2col_stacked_fluid_33_66.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_66_33:
+  label: Fluid two column stacked - 66/33 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_66_33/cmi-layouts-2col-stacked-fluid-66-33
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_66_33/cmi_layouts_2col_stacked_fluid_66_33.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_noresponsive_40_60:
+  label: Fluid two column stacked - 40/60 noresponsive layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_noresponsive_40_60/cmi-layouts-2col-stacked-noresponsive-40-60
+  icon: ds_layouts/cmi_layouts_2col_stacked_noresponsive_40_60/cmi_layouts_2col_stacked_noresponsive_40_60.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_40_60:
+  label: Fluid two column stacked - 40/60 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_40_60/cmi-layouts-2col-stacked-fluid-40-60
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_40_60/cmi_layouts_2col_stacked_fluid_40_60.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_50_50:
+  label: Fluid two column stacked - 50/50 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_50_50/cmi-layouts-2col-stacked-fluid-50-50
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_50_50/cmi_layouts_2col_stacked_fluid_50_50.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_50_50_no_float_right:
+  label: Fluid two column stacked - 50/50 No float-right layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_50_50_no_float_right/cmi-layouts-2col-stacked-fluid-50-50-no-float-right
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_50_50_no_float_right/cmi_layouts_2col_stacked_fluid_50_50.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_60_40:
+  label: Fluid two column stacked - 60/40 layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_60_40/cmi-layouts-2col-stacked-fluid-60-40
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_60_40/cmi_layouts_2col_stacked_fluid_60_40.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_2col_stacked_fluid_85_15:
+  label: Fluid two column stacked - 85/15 Layout
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_2col_stacked_fluid_85_15/cmi-layouts-2col-stacked-fluid-85-15
+  icon: ds_layouts/cmi_layouts_2col_stacked_fluid_85_15/cmi_layouts_2col_stacked_fluid_85_15.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_3col_stacked_fluid_50_25_25:
+  label: Fluid three column stacked - 50/25/25
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_3col_stacked_fluid_50_25_25/cmi-layouts-3col-stacked-fluid-50-25_25
+  icon: ds_layouts/cmi_layouts_3col_stacked_fluid_50_25_25/cmi_layouts_3col_stacked_fluid_50_25_25.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    middle:
+      label: Middle
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_3col_stacked_fluid_25_25_50:
+  label: Fluid three column stacked - 25/25/50
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_3col_stacked_fluid_25_25_50/cmi-layouts-3col-stacked-fluid-25-25-50
+  icon: ds_layouts/cmi_layouts_3col_stacked_fluid_25_25_50/cmi_layouts_3col_stacked_fluid_25_25_50.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    middle:
+      label: Middle
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_3col_stacked_fluid_25_50_25:
+  label: Fluid three column stacked - 25/50/25
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_3col_stacked_fluid_25_50_25/cmi-layouts-3col-stacked-fluid-25-50-25
+  icon: ds_layouts/cmi_layouts_3col_stacked_fluid_25_50_25/cmi_layouts_3col_stacked_fluid_25_50_25.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    middle:
+      label: Middle
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_3col_stacked_fluid_33_34_33:
+  label: Fluid three column stacked - 33/34/33
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_3col_stacked_fluid_33_34_33/cmi-layouts-3col-stacked-fluid-33-34-33
+  icon: ds_layouts/cmi_layouts_3col_stacked_fluid_33_34_33/cmi_layouts_3col_stacked_fluid_33_34_33.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    middle:
+      label: Middle
+    right:
+      label: Right
+    footer:
+      label: Footer
+cmi_layouts_3col_stacked_fluid_20_40_40:
+  label: Fluid three column stacked - 20/40/40
+  category: CMI Layouts
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds_layouts/cmi_layouts_3col_stacked_fluid_20_40_40/cmi-layouts-3col-stacked-fluid—20-40-40
+  icon: ds_layouts/cmi_layouts_3col_stacked_fluid_20_40_40/cmi_layouts_3col_stacked_fluid_20_40_40.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    middle:
+      label: Middle
+    right:
+      label: Right
+    footer:
+      label: Footer

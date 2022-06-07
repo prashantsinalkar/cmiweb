@@ -1,0 +1,25 @@
+<header id="header-left" class="cmi-left-side-header" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": false, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}'>
+  <div class="header-body">
+    <div class="header-container">
+      {% if logopath %}
+        <div class="cmi-site-branding">
+          <a href="{{ front_page }}">
+            <img alt="{{ site_name }}" width="111" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{ logopath }}">
+          </a>
+          <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" class="cmi-site-name">{{ site_name }}</a>
+        </div>
+      {% endif %}
+      <div class="side-header-menu"><span class="CMI-Icons">x</span></div>
+      <div class="cmi-search">
+        {% if page.header_search %}
+          {{ page.header_search }}
+        {% endif %}
+      </div>
+      <div class="cmi-main-menu">
+        {% if page.header_menu %}
+          {{ page.header_menu }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>

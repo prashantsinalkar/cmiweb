@@ -1,0 +1,86 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ *
+ * @ingroup themeable
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    
+    {% if menu_level == 0 %}
+      <ul {{ attributes.addClass('main-menu') }}>    
+    {% else %}
+      <ul {{ attributes.removeClass('main-menu').addClass('sub-menu') }}>
+    {% endif %}
+    {% for item in items %}
+      {% set menu_name = item.content['#colossal_menu_link'].getMenuName() %}
+      {% set bundle = item.content['#colossal_menu_link'].bundle() %}
+      
+      {% if menu_level == 0 and menu_name == 'primary_menu' and loop.first %}
+        <li id="super-special-menu" {{ item.attributes.addClass('expanded', 'link-' ~ item.identifier, 'super-special-menu') }}>
+      {% elseif bundle == 'topic_link' %}
+        {% if item.below %}
+          <li class="expanded link-{{ item.identifier }} menu-level-topic">  
+        {% else %}
+          <li{{ item.attributes.addClass('link-' ~ item.identifier, 'menu-level-topic') }}>
+        {% endif %}   
+      {% else %}
+        {% if item.below %}
+          <li class="expanded link-{{ item.identifier }} menu-level-topic menu-level-{{ menu_level }}">  
+        {% else %} 
+          <li{{ item.attributes.addClass('link-' ~ item.identifier, 'menu-level-' ~ menu_level) }}>
+        {% endif %} 
+      {% endif %}
+      {% if bundle == 'topic_link'  %}
+          {{ item.content }}
+      {% endif %}
+              
+        {% if item.show_title %}
+          {% if item.has_link %}
+            {{ link(item.title, item.url, { 'class':['link-level-' ~ menu_level]} ) }}
+          {% else %}
+            <span>{{ item.title }}</span>
+          {% endif %}
+        {% endif %}
+        
+        {% if menu_level == 0 and menu_name == 'primary_menu' %}
+          <div class="primary-menu-wrapper">
+        {% endif %}
+        
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        {% endif %}
+
+        {% if bundle == 'cta_link' %}
+          {{ item.content }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

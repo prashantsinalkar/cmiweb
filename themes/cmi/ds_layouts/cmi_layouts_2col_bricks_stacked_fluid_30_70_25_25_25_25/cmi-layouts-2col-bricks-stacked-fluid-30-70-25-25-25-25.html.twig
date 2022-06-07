@@ -1,0 +1,90 @@
+{#
+/**
+ * @file
+ * Display Suite fluid 2 column stacked 30-70-25-25-25-25 template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - header_wrapper: wrapper element around header region
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - footer_wrapper: wrapper element around footer region
+ * - attributes: layout attributes
+ * - header_attributes: attributes for header region
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - footer_attributes: attributes for footer region
+ * - header: content of header region
+ * - left: content of left region
+ * - right: content of right region
+ * - footer: content of footer region
+ */
+#}
+
+{% set above_left = above_left|render %}
+{% set above_right = above_right|render %}
+{% set middle_wrappers = middle_wrappers|render %}
+{% set below_first = below_first|render %}
+{% set below_second = below_second|render %}
+{% set below_third = below_third|render %}
+{% set below_fourth = below_fourth|render %}
+
+{% if (above_left and not above_right) or (above_right and not above_left) or (below_first and not below_second and not below_third and not below_fourth) or (below_second and not below_first and not below_third and not below_fourth) or (below_third and not below_first and not below_second and not below_fourth) or (below_fourth and not below_first and not below_third and not below_second) %}
+  {% set layout_class = 'group-one-column' %}
+{% endif %}
+
+<{{ outer_wrapper }}{{ attributes.addClass(layout_class, 'cmi-layouts-2col-bricks-stacked-fluid-30-70-25-25-25-25', 'clearfix') }}>
+
+  {{ title_suffix.contextual_links }}
+
+  <{{ header_wrapper }}{{ header_attributes.addClass('group-header') }}>
+    {{ header }}
+  </{{ header_wrapper }}>
+
+  {% if above_left %}
+    <{{ above_left_wrapper }}{{ above_left_attributes.addClass('group-above group-above-left') }}>
+      {{ above_left }}
+    </{{ above_left_wrapper }}>
+  {% endif %}
+
+  {% if above_right %}
+    <{{ above_right_wrapper }}{{ above_right_attributes.addClass('group-above group-above-right') }}>
+      {{ above_right }}
+    </{{ above_right_wrapper }}>
+  {% endif %}
+
+ {% if middle_wrappers %}
+    <{{ middle_wrapper }}{{ middle_attributes.addClass('group-middle') }}>
+    {{ middle }}
+  </{{ middle_wrapper }}>
+{% endif %}
+
+  {% if below_first %}
+    <{{ below_first_wrapper }}{{ below_first_attributes.addClass('group-below-first') }}>
+      {{ below_first }}
+    </{{ below_first_wrapper }}>
+  {% endif %}
+
+  {% if below_second %}
+    <{{ below_second_wrapper }}{{ below_second_attributes.addClass('group-below-second') }}>
+      {{ below_second }}
+    </{{ below_second_wrapper }}>
+  {% endif %}
+
+    {% if below_third %}
+    <{{ below_third_wrapper }}{{ below_third_attributes.addClass('group-below-third') }}>
+    {{ below_third }}
+    </{{ below_third_wrapper }}>
+    {% endif %}
+
+    {% if below_fourth %}
+    <{{ below_fourth_wrapper }}{{ below_fourth_attributes.addClass('group-below-fourth') }}>
+    {{ below_fourth }}
+    </{{ below_fourth_wrapper }}>
+    {% endif %}
+  
+  <{{ footer_wrapper }}{{ footer_attributes.addClass('group-footer') }}>
+    {{ footer }}
+  </{{ footer_wrapper }}>
+
+</{{ outer_wrapper }}>

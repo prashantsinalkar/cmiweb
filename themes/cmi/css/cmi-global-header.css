@@ -1,0 +1,112 @@
+div#global-header {
+    background: #000;
+}
+#global-header #global-header-inside {
+    float: right;
+}
+#global-header .global-header-area{
+    float: left;
+    position: relative;
+}
+a.menu-toggle{
+	display:none;
+}
+.global-header-area .region-global-header-first, .global-header-area .region-global-header-second ,
+.global-header-area .region-global-header-third, .global-header-area .region-global-header-fourth, .global-header-area .region-global-header-fifth {
+    width: auto !important;
+}
+
+@media(min-width:564px){
+	#global-header-firstpart, #global-header-secondpart{
+		float:left;
+		margin-bottom: -5px;
+	}
+	#global-header-firstpart{
+		margin-right:20px;
+	}
+}
+
+@media(max-width:564px){
+	#global-header-firstpart, #global-header-secondpart{
+		float:right;
+		margin-left: 15px;
+	}
+	#global-header .global-header-area:last-child .block-menu:hover ul.menu {
+		left: auto;
+		right: 0 !important;
+	}
+}
+.global-header-area .block-language, .global-header-area .block-menu {
+    padding-bottom: 0px !important;
+}
+.global-header-area{
+    margin-right: 15px;
+}
+.global-header-area:last-child{
+    margin-right: 0px !important;
+}
+.global-header-area .block-language h2,
+.global-header-area .block-menu h2,
+#global-header p > a,
+#global-header .field--name-body > a,
+.global-header-area .block-block-content h2,
+.global-header-area .field-content a,
+.global-header-area span.field-content,
+.global-header-area .views-label,
+.global-header-area .field-content a span{
+    color: #fff;
+	text-decoration: none;
+	font-size: 13.5px;
+	margin: 0px;
+	padding: 0px 0px 3px 0px;
+	line-height: 28px;
+	font-weight: 400;
+	font-family: 'proxima-novasemibold';
+}
+#block-logoutblock .content, #block-logoutblock h2 {
+    display: inline-block;
+}
+.global-header-area .block-language ul.links, .global-header-area .block-menu ul.menu {
+    display: none;
+}
+#global-header-secondpart .global-header-area:last-child .block-menu:hover ul.menu {
+    left: auto;
+    right: 0px;
+}
+.global-header-area .block-language:hover ul.links,
+.global-header-area .block-menu:hover ul.menu {
+	display: block;
+	position: absolute;
+	z-index: 999;
+	background: #fff;
+	width: auto;
+	min-width: 150px;
+	max-width: 175px;
+	margin-left: 0px;
+	top: 25px;
+}
+
+.global-header-area ul.menu li {
+    padding: 0px;
+    margin-top: 3px;
+
+}
+.global-header-area .block-language ul.links li a,
+.global-header-area .block-menu ul.menu li a {
+	color: #333;
+	margin: 0px 10px;
+	font-size: 13px;
+	line-height: 1.25em;
+	display: inline-table;
+}
+
+.global-header-area .block-language ul.links li:hover a,
+.global-header-area .block-menu ul.menu li:hover a,
+.global-header-area .block-language ul.links li a:hover,
+.global-header-area .block-menu ul.menu li a:hover {
+    text-decoration: underline;
+}
+.global-header-area .block-language:hover ul.links li,
+.global-header-area .block-menu:hover ul.menu li {
+    list-style-type: none;
+}

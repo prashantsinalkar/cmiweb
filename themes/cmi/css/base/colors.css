@@ -1,0 +1,24 @@
+body, .comment { background-color: #fff; }
+
+.node footer { border-top: 2px solid #F5F5F5; }
+
+#bottom-content, .toggle-control a, .toggle-control a:hover { background-color: #fff; }
+
+#header-top, .toggle-control {border-top: 5px solid #222222;}
+
+a, #main-content a{ color: #DA291C; }
+a:focus, a:hover,
+#forum thead a:hover, 
+#block-node-recent .node-title a:hover{	
+	color: #9F0200;
+}
+input[type="submit"]:hover, input[type="reset"]:hover,
+input[type="button"]:hover, .dark input[type="submit"],
+.highlighted-block .btn:hover, .highlighted-block .btn:focus,
+.call-to-action .btn, .tag a:hover { background-color: #E74C3C; }
+
+::-moz-selection { background-color: #3575D3; }
+
+::selection { background-color: #3575D3; }
+
+input.form-text:focus, input.search-text:focus, textarea.form-textarea:focus {  border-color: #E74C3C; }

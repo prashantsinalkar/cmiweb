@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies: {  }
+id: iitbldap
+label: 'IITB-LDAP'
+type: default
+account_name_attr: ''
+address: ldap.iitb.ac.in
+basedn:
+  - 'ou=People,dc=iitb,dc=ac,dc=in'
+bind_method: anon_user
+binddn: null
+bindpw: null
+encryption: tls
+grp_derive_from_dn_attr: ou
+grp_derive_from_dn: true
+grp_memb_attr_match_user_attr: ''
+grp_memb_attr: ''
+grp_nested: false
+grp_object_cat: ''
+grp_test_grp_dn_writeable: ''
+grp_test_grp_dn: ''
+grp_unused: false
+grp_user_memb_attr_exists: false
+grp_user_memb_attr: ''
+mail_attr: mail
+mail_template: ''
+picture_attr: ''
+port: 389
+testing_drupal_user_dn: ''
+testing_drupal_username: ''
+timeout: 10
+unique_persistent_attr_binary: false
+unique_persistent_attr: ''
+user_attr: uid
+user_dn_expression: ''
+weight: null

@@ -1,0 +1,22 @@
+<div class="cmi-user-login-form login-form__wrapper">
+    <form{{ attributes }}>
+        <div class="cmi-login-form">
+            <div id="error_messages"></div>
+                {{ element.messages }}
+            <div class="cmi-login-form">
+            {{ element.name }} {# username element #}
+            {{ element.pass }} {# password element #}
+            {{ element.form_build_id }} {# required #}
+            {{ element.form_id }} {# required #}
+            <div class="forgot-password">
+                <a href="{{ base_path }}/user/password" class="">Forgot your username or password?</a>
+            </div>
+            <div class="cmi-captcha cmi-clear-both">
+                {{ element.captcha }}
+            </div>
+            <div class="cmi-text-align-right cmi-login-submit cmi-margin-top-15 login-form__submit">
+                {{ element.actions.submit }}
+            </div>
+        </div>
+    </form>
+</div>

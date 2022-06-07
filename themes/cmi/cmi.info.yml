@@ -1,0 +1,41 @@
+name: CMI
+type: theme
+base theme: classy
+description: 'A Cummins Standard Base Theme.'
+# core: 8.x
+
+libraries:
+- cmi/bootstrap
+- cmi/global-styling
+- cmi/toggle
+- cmi/font-styling
+- cmi/jquery-custom
+
+regions:
+    global_header_first: 'Welcome User'
+    global_header_second: 'Languages'
+    global_header_third: 'Customer Support'
+    global_header_fourth: 'Other Cummins Sites'
+    global_header_fifth: 'Global Header Fifth'
+    header_branding: 'Site Branding'
+    header_menu: 'Header Menu'
+    header_search: 'Header Search'
+    before_content: 'Before Content'
+    breadcrumbpath: 'Breadcrumb Path'
+    content: Content
+    sidebar_first: 'Sidebar First'
+    sidebar_second: 'Sidebar Second'
+    after_content: 'After Content'
+    footer_first: 'Footer Sitemap'
+    footer_second: 'Footer Second'
+    footer_third: 'Footer Third'
+    footer_fourth: 'Footer Fourth'
+    global_footer_left: 'Footer Copyright'
+    global_footer_right: 'Footer Policy Statements'
+
+# Information added by Drupal.org packaging script on 2016-02-09
+version: ‘8.x-2.0’
+core: '8.x'
+core_version_requirement: ^8 || ^9
+project: 'cmi'
+datestamp: 1455016147

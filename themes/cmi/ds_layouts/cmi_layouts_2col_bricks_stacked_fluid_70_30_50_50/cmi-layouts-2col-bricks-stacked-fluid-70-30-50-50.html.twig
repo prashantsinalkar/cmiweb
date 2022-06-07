@@ -1,0 +1,73 @@
+{#
+/**
+ * @file
+ * Display Suite fluid 2 column stacked 70-30 template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - header_wrapper: wrapper element around header region
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - footer_wrapper: wrapper element around footer region
+ * - attributes: layout attributes
+ * - header_attributes: attributes for header region
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - footer_attributes: attributes for footer region
+ * - header: content of header region
+ * - left: content of left region
+ * - right: content of right region
+ * - footer: content of footer region
+ */
+#}
+
+{% set above_left = above_left|render %}
+{% set above_right = above_right|render %}
+{% set below_left = below_left|render %}
+{% set below_right = below_right|render %}
+
+{% if (above_left and not above_right) or (above_right and not above_left) or (below_left and not below_right) or (below_right and not below_left) %}
+  {% set layout_class = 'group-one-column' %}
+{% endif %}
+
+<{{ outer_wrapper }}{{ attributes.addClass(layout_class, 'cmi-layouts-2col-bricks-stacked-fluid-70-30-50-50', 'clearfix') }}>
+
+  {{ title_suffix.contextual_links }}
+
+  <{{ header_wrapper }}{{ header_attributes.addClass('group-header') }}>
+    {{ header }}
+  </{{ header_wrapper }}>
+
+  {% if above_left %}
+    <{{ above_left_wrapper }}{{ above_left_attributes.addClass('group-above-left') }}>
+      {{ above_left }}
+    </{{ above_left_wrapper }}>
+  {% endif %}
+
+  {% if above_right %}
+    <{{ above_right_wrapper }}{{ above_right_attributes.addClass('group-above-right') }}>
+      {{ above_right }}
+    </{{ above_right_wrapper }}>
+  {% endif %}
+
+    <{{ middle_wrapper }}{{ middle_attributes.addClass('group-middle') }}>
+    {{ middle }}
+  </{{ middle_wrapper }}>
+
+  {% if below_left %}
+    <{{ below_left_wrapper }}{{ below_left_attributes.addClass('group-below-left') }}>
+      {{ below_left }}
+    </{{ below_left_wrapper }}>
+  {% endif %}
+
+  {% if below_right %}
+    <{{ below_right_wrapper }}{{ below_right_attributes.addClass('group-below-right') }}>
+      {{ below_right }}
+    </{{ below_right_wrapper }}>
+  {% endif %}
+  
+  <{{ footer_wrapper }}{{ footer_attributes.addClass('group-footer') }}>
+    {{ footer }}
+  </{{ footer_wrapper }}>
+
+</{{ outer_wrapper }}>

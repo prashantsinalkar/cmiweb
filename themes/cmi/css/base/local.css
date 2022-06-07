@@ -1,0 +1,229 @@
+/* Custom CSS overrides */
+/* Header - Search */
+.search-open #search-block-form .form-actions .form-submit {
+    display: none !important;
+}
+@media(max-width:991px){
+	#header-search {
+		margin-top: -25px !important;
+	}
+}
+#header-main-menu+#header-search {
+    margin-top: -36px;
+}
+#header-search {
+    height: 36px;
+    width: 36px;
+    background: #9F0200;
+    display: block;
+    margin-top: -25px;
+    float: right;
+}
+#header-search .icon-search {
+    background: url("../../CMI-WebIcon-Sprite.png") no-repeat scroll -63px -2145px;
+    display: inline-block;
+    height: 35px;
+    margin: 3px 0px 0px 0px;
+    position: relative;
+    float: left;
+    width: 35px;
+}
+.search-btn.icon-remove {
+    background: url("../../CMI-WebIcon-Sprite.png") no-repeat scroll -70px -44px;
+    height: 35px;
+    margin: 3px 0px 0px 7px;
+    position: relative;
+    float: left;
+    width: 30px;
+    display: inline-block;
+}
+.search-open {
+    display: none;
+}
+.search-open .region.region-header-search {
+    position: relative;
+}
+.search-open #search-block-form {
+    position: absolute;
+    right: 0;
+    z-index: 500;
+}
+.search-open input {
+    border-radius: 2px !important;
+    width: 350px !important;
+    background-color: #333 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    line-height: 14px;
+    border: 0px solid #333 !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    padding-left: 40px !important;
+    background: #2C2C2C url(/themes/custom/cmi/images/icons/icon-search.png) no-repeat 0.75em center !important;
+    background-size: 14px 14px !important;
+}
+
+
+/*Search Autocomplete*/
+.ui-menu .ui-menu-item-wrapper{
+  padding:0px;
+}
+.ui-menu .ui-menu-item-wrapper.ui-state-active{
+  margin:0px;
+}
+.ui-menu .ui-menu-item {
+    list-style-image: none !important;
+}
+ul li.ui-menu-item {
+    list-style-type: none !important;
+}
+.ui-autocomplete-field-title {
+    color: #fff !important;
+    padding: 10px 0px 10px 15px;
+    font-weight: normal !important;
+}
+
+ul.ui-autocomplete {
+    background: #4D4D4D;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    min-width: 350px !important;
+    width: 250px !important;
+    bottom: 0 !important;
+    z-index: 30000;
+    float: right;
+    min-height: 100px;
+    height: auto !important;
+    margin-left: -20px;
+}
+
+ul[data-sa-theme="basic-blue"] .ui-autocomplete-field-term {
+    font-weight: bold;
+    border-bottom: 0px solid #eee;
+    color: #fff !important;
+}
+.ui-autocomplete-field {
+    color: #fff !important;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+.ui-autocomplete-field-created, .ui-autocomplete-field-group{
+	display:none !important;
+}
+
+ul[data-sa-theme="basic-blue"] > li.ui-menu-item {
+    background: none !important;
+    border-bottom: 0px solid #333 !important;
+    padding: 0px !important;
+
+}
+.ui-autocomplete-fields:hover {
+    background: #900;
+    padding: 0px 0px 0px 20px;
+}
+ul[data-sa-theme="basic-blue"] > li.ui-menu-item {
+    background: white;
+}
+ul[data-sa-theme="basic-blue"] > *, ul[data-sa-theme="basic-blue"] > .ui-state-focus, ul[data-sa-theme="basic-blue"] > :hover {
+    border-width: 0px !important;
+}
+@media(max-width:991px){
+.search-open .region.region-header-search {
+    position: relative;
+    margin-top: 11px;
+}
+.search-open input.safari-small-screen-search-open{
+   margin-top:40px !important;
+}
+.search-open input.chrome-small-screen-search-open{
+   margin-top:0px !important;
+}
+}
+@media(max-width:660px){
+.search-open input {
+    width: 300px !important;
+}
+ul.ui-autocomplete {
+    min-width: 300px !important;
+}
+}
+
+/*Search - Page*/
+#ui-id-2.ui-autocomplete {
+    display: none !important;
+}
+.not-front .layout-main-wrapper .main-content ol li::before {
+    content: counters(item,".") " ";
+    counter-increment: item;
+    color: #DA291C;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+    line-height: 18px;
+}
+.not-front .layout-main-wrapper .main-content ol li {
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 15px 0;
+    display: block;
+}
+.search-results li {
+    list-style-type: none;
+    margin: 10px 0px !important;
+    padding: 0px 10px 1px 10px!important;
+    background: #F8F8F8;
+    text-align: justify;
+    line-height: 25px;
+}
+#main input.form-search {
+    padding-left: 0px !important;
+}
+#main #search-form + h2 {
+    display: none;
+}
+.search-form.search-page-form .container-inline{
+	display: inline-flex;
+}
+.search-form.search-page-form .container-inline label{
+	/*width: 100% !important;*/
+	display:none !important;
+}
+.search-form.search-page-form .container-inline .js input.form-autocomplete {
+    border: 1px solid #ccc;
+    width: 90% !important;
+    background: #fff !important;
+}
+.search-results {
+    margin-top: 20px !important;
+    padding-left: 0px !important;
+}
+
+.search-help-link, .search-advanced{
+	display:none !important;
+}
+.search-page-form .form-wrapper .js-form-item input.form-autocomplete {
+    height: 50px;
+    border: 0;
+    background: white;
+    float: right;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4D4D4D;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+.search-page-form .form-wrapper input[value="Search"] {
+    color: transparent;
+}
+.search-page-form .form-wrapper input#edit-submit {
+    background: #fff url(/themes/custom/cummins/images/icons/icon-search-grey.png) no-repeat 0.75em center !important;
+    background-size: 18px 18px !important;
+    margin: 35px 0px 0px -27px !important;
+    width: 20px;
+    height: 18px;
+}
