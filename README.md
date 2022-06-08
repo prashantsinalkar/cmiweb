@@ -1,5 +1,5 @@
-# iitbdeptweb
-IIT Bombay Department Website Distribution Profile
+# cmiweb
+Cummins Distribution Profile
 
 new changes
 =======
@@ -7,4 +7,3 @@ new changes
 Git Workflow
 
 1. testing git conflict
-
